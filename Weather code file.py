@@ -114,11 +114,12 @@ def find_index_of_closest_datapoint(
 
 
 # get every filepath for every date and every hour from 5pm to 6am
+
 dates = [
     date_.strftime("%Y/%m/%d")
     for date_ in daterange(start_date, end_date)
 ]
-hours = [i for i in range(7, 13)] # + [e for e in range(13, 24)]
+hours = [i for i in range(0, 6)] + [e for e in range(6, 24)]
 
 all_ncfiles = [
     (
@@ -263,4 +264,5 @@ with open(f"data/MissingWeatherData{n_batch}", "w") as outfile:
 #     data = data.sort_values(by="name")
 
 # Load data (overwrites "data/WeatherData.csv")
+
 # data.to_csv("data/WeatherData.csv")
