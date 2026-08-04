@@ -5,7 +5,7 @@ Purpose: Retrieve weather data from the archive of
 Meterologisk institutt.
 
 The user provides a set of locations (specified in latitude and longitude),
-in a .csv file and a range of dates to retrieve hourly data for.
+in a .csv file and a range of dates to retrieve hourly data for in UTC.
 
 The data retrieved is from the closest observation points in Metrologisk
 institutt's dataset, which has a resolution of 1km. The retrieved data includes
